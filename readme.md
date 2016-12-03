@@ -10,7 +10,7 @@ I use several computers regularly and as I update settings, if I don't remember 
 
 ## Goal
 
-* Provide a full enviornment setup to compile and sync my system stuff and settings
+* Provide a full environment setup to compile and sync my system stuff and settings
 * Experiment with Mackup
 
 ## Clean Install
@@ -42,7 +42,7 @@ Get to it!
  * You should probably be using a VPN when not on a trusted network, this is just a note, but still. You'll not Viscosity (a Mac OpenVPN client) is installed by this repo's [`Brewfile`](./Brewfile).
  * I strongly recommend using both an ED25519 Elyptic Curve key as well as an RSA key for old stuff that doesn't support EC. 
  * Use passwords for your private keys please! 
- * Make sure to use a long RSA key too and keep an eye on NIST's recommendations for key lenght. For the next few years, 4096 is sufficient and I've read a few articles that even imply that beyond 3072 bytes you're hitting an asymptote for security/performance.
+ * Make sure to use a long RSA key too and keep an eye on NIST's recommendations for key length. For the next few years, 4096 is sufficient and I've read a few articles that even imply that beyond 3072 bytes you're hitting an asymptote for security/performance.
  * Using a best practice from the many dotenv projects, I've included [`.env.example`](./.env.example) as an example of a place to store your config.
 
 ### Doing it with EC
@@ -81,9 +81,9 @@ Please open issues for any enhancements you may have or issues you find, I'll re
 
 # Some Background 
 
-It's been several years since I've done a fresh install of my Mac. Over time, remenants of past experiements, accumulated old settings, and what not have "left their mark". Time to fix that with a clean install! I'm going to coordinate that with the Sierra OS update too, beacuase; well, why not?
+It's been several years since I've done a fresh install of my Mac. Over time, remnants of past experiments, accumulated old settings, and what not have "left their mark". Time to fix that with a clean install! I'm going to coordinate that with the Sierra OS update too, because; well, why not?
 
 # Credits
 
-After a lot of resaerch and reading Dries' Dotfiles repo servered largely as my template for getting to this point.
+After a lot of research and reading Dries' Dotfiles repo severed largely as my template for getting to this point.
 [Read his blog post here](https://driesvints.com/blog/getting-started-with-dotfiles). Another key resource for me was he [Github does dotfiles](https://dotfiles.github.io/) project. Please check them both out and don't hesitate to contribute!
