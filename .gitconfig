@@ -1,0 +1,12 @@
+[user]
+	name = Daniel Furman
+[core]
+	autocrlf = input
+	excludesfile = $HOME/.dotfiles/gitignore_global
+	editor = subl -n -w
+[push]
+	default = simple
+[diff "git_diff_xlsx"]
+	binary = True
+	textconv = parse_xlsx
+	cachetextconv = true
