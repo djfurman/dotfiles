@@ -18,14 +18,14 @@ I use several computers regularly and as I update settings, if I don't remember 
 1. Update OS from the App Store
 2. Link iCLoud account
 3. Enable FileValut
-4. Enable your Firewall
+4. Enable your FireWall
 5. Install Xcode
 6. Open Xcode & accept the license agreement
 7. Install macOS Command Line Tools by running `xcode-select --install`
 8. Generate yourself some OpenSSH keys, add them to your GitHub account
 5. Clone this repo to `~/.dotfiles`
-6. Append `/usr/local/bin/zsh` to the end of your `/etc/shells` file
 7. Copy the example env file to your active one `cp .env.example .env`
+8. Create a GitHub Personal Access Token for your new PC
 7. Update your personal stuff into the `.env` file
 7. Run `install.sh` to start the installation
 8. Make sure Dropbox is running/configured
