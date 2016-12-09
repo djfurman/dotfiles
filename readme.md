@@ -27,7 +27,7 @@ I use several computers regularly and as I update settings, if I don't remember 
 7. Copy the example env file to your active one `cp .env.example .env`
 8. Create a GitHub Personal Access Token for your new PC
 7. Update your personal stuff into the `.env` file
-7. Run `install.sh` to start the installation
+7. Run `install.sh` to start the installation (you will be asked for your `sudo` password several times throughout the process to create directories, switch your default shell, etc).
 8. Make sure Dropbox is running/configured
 9. Restore preferences by running `mackup restore`
 10. Restart your computer
