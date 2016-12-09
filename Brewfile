@@ -37,7 +37,7 @@ mas 'Telegram', id: 747648890 ## Secure text messaging
 mas 'Caffeine', id: 411246225 ## Screen keep-alive for intense thought
 mas 'Boxy SVG', id: 611658502 ## Mac native SVG image editor
 mas 'microsoft-remote-desktop', id: 715768417 ## Remote desktop connection client to RDP
-mac 'onedrive', id: 823766827 ## Local filesystem link to Microsoft OneDrive
+mas 'onedrive', id: 823766827 ## Local filesystem link to Microsoft OneDrive
 
 # Cask installation
 ## I believe this will solve the cask issue with 
