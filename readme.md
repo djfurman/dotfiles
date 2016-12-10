@@ -47,11 +47,11 @@ Get to it!
 
 ### Doing it with EC
 
-`ssh-keygen -t ed25519 -c "My Name & Computer"` 
+`ssh-keygen -t ed25519 -C "My Name & Computer"` 
 
 ### Doing it with RSA @ 4096 bytes
  
-`ssh-keygen -t rsa -b 4096 -c "My Name & Computer"`
+`ssh-keygen -t rsa -b 4096 -C "My Name & Computer"`
 
 ## Finding Your Way
 
