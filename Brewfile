@@ -22,6 +22,7 @@ brew 'python'
 brew 'python3'
 ## Node 
 brew 'node', args: ['without-npm']
+brew 'yarn'
 ## COBOL
 brew 'gnu-cobol'
 ## PHP
@@ -34,7 +35,6 @@ brew 'redis'
 
 # Install Mac App Store apps
 mas 'Telegram', id: 747648890 ## Secure text messaging
-mas 'Caffeine', id: 411246225 ## Screen keep-alive for intense thought
 mas 'Boxy SVG', id: 611658502 ## Mac native SVG image editor
 mas 'microsoft-remote-desktop', id: 715768417 ## Remote desktop connection client to RDP
 mac 'onedrive', id: 823766827 ## Local filesystem link to Microsoft OneDrive
@@ -50,6 +50,7 @@ cask 'font-fira-code'
 cask 'alfred'			## Spotlight on Steroids
 cask 'amazon-drive'		## Use S3 like DropBox
 cask 'amazon-music'		## Yay PrimeMusic!
+cask 'caffeine'			## Keep the mac awake...
 cask 'cyberduck'		## GUI remote file browser
 cask 'dropbox'			## Used to sync settings across devices
 cask 'gitter'			## Team communication lobby for GitHub projects
