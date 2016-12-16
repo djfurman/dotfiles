@@ -3,6 +3,8 @@
 # This script installs and configures a fresh macOS
 echo "Setting up this Mac..."
 
+source .env
+
 # Homebrew - The missing package manager for macOS
 ## Check for Homebrew and install if we don't have it
 if test ! $(which brew); then
@@ -32,14 +34,8 @@ source .env
 ## Install Oh-My-ZSH
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ## Php Development Setup
-### Install Composer 
-### Handled by bundle (hopefully), but uncomment the following two lines to do manually
-# curl -sS https://getcomposer.org/installer | php
-# mv composer.phar /usr/local/bin/composer
 ### Install global Composer packages
 /usr/local/bin/composer global require laravel/installer laravel/lumen-installer laravel/valet drush/drush drupal/console@stable
-### Install Laravel Valet
-$HOME/.composer/vendor/bin/valet install
 ## Install Python virtualenv stuff
 pip install virtualenvwrapper
 mkdir -p $WORKON_HOME
