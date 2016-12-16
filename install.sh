@@ -35,12 +35,11 @@ source .env
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ## Php Development Setup
 ### Install global Composer packages
-/usr/local/bin/composer global require laravel/installer laravel/lumen-installer laravel/valet drush/drush drupal/console@stable
+/usr/local/bin/composer global require laravel/installer laravel/lumen-installer laravel/valet drush/drush drupal/console
 ## Install Python virtualenv stuff
 pip install virtualenvwrapper
 mkdir -p $WORKON_HOME
 ## Install NPM manually
-# echo prefix=~/.npm-packages >> ~/.npmrc # This line is recommended by the NPM fix on homebrew # I think we may be able to live without it given the sync'd file
 curl -L https://www.npmjs.com/install.sh | sh
 
 # Version Control - This directory isn't created by default in mac, so we can fix that
