@@ -26,7 +26,7 @@ brew 'yarn'
 ## COBOL
 brew 'gnu-cobol'
 ## PHP
-brew 'php70', args: ['with-debug', 'without-apache']
+brew 'php70'
 brew 'php70-mcrypt'
 brew 'composer'
 ## Database
@@ -37,7 +37,7 @@ brew 'redis'
 mas 'Telegram', id: 747648890 ## Secure text messaging
 mas 'Boxy SVG', id: 611658502 ## Mac native SVG image editor
 mas 'microsoft-remote-desktop', id: 715768417 ## Remote desktop connection client to RDP
-mac 'onedrive', id: 823766827 ## Local filesystem link to Microsoft OneDrive
+mas 'onedrive', id: 823766827 ## Local filesystem link to Microsoft OneDrive
 
 # Cask installation
 ## I believe this will solve the cask issue with 
@@ -49,7 +49,9 @@ cask 'font-fira-code'
 # Apps
 cask 'alfred'			## Spotlight on Steroids
 cask 'amazon-drive'		## Use S3 like DropBox
-cask 'amazon-music'		## Yay PrimeMusic!
+# Cask install of amazon music fails - had to download manually; maybe I can fix this later
+#cask 'amazon-music'		## Yay PrimeMusic!
+cask 'appcleaner'		## Get rid of stuff well
 cask 'caffeine'			## Keep the mac awake...
 cask 'cyberduck'		## GUI remote file browser
 cask 'dropbox'			## Used to sync settings across devices
