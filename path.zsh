@@ -2,10 +2,10 @@
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
 
 # Load Node global installed binaries
-export PATH="$HOME/.node/bin:$HOME/.npm-packages/bin:$PATH"
+export PATH="$HOME/.npm-packages/bin:$PATH"
 
 # Load composer globally installed binaries
-export PATH="$HOME/.composer/bin:$PATH"
+export PATH="$HOME/.composer/vendor/bin:$PATH"
 
 # Use project specific binaries before global ones
 export PATH="node_modules/.bin:vendor/bin:$PATH"
