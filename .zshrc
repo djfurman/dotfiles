@@ -1,5 +1,5 @@
 # Load environment variables
-source $DOTFILES/.env
+source ~/.dotfiles/.env
 
 # Load Path
 source $DOTFILES/path.zsh
