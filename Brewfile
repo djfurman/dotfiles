@@ -26,8 +26,8 @@ brew 'yarn'
 ## COBOL
 brew 'gnu-cobol'
 ## PHP
-brew 'php70'
-brew 'php70-mcrypt'
+brew 'php71'
+brew 'php71-mcrypt'
 brew 'composer'
 ## Database
 brew 'mariadb'
@@ -49,21 +49,19 @@ cask 'font-fira-code'
 # Apps
 cask 'alfred'			## Spotlight on Steroids
 cask 'amazon-drive'		## Use S3 like DropBox
-# Cask install of amazon music fails - had to download manually; maybe I can fix this later
-#cask 'amazon-music'		## Yay PrimeMusic!
 cask 'appcleaner'		## Get rid of stuff well
 cask 'caffeine'			## Keep the mac awake...
 cask 'cyberduck'		## GUI remote file browser
 cask 'dropbox'			## Used to sync settings across devices
 cask 'gitter'			## Team communication lobby for GitHub projects
-cask 'google-chrome'	## Browser V8 goodness
+cask 'google-chrome'		## Browser V8 goodness
 cask 'insomnia'			## RESTful API Testing
 cask 'iterm2'			## Terminal replacement
 cask 'keepassx'			## Password manager
-cask 'keka'				## Open source "open anything" archive extractor tool
+cask 'keka'			## Open source "open anything" archive extractor tool
 cask 'libreoffice'		## Open source office replacement, much better at dealing with file formats than MS
 cask 'namechanger'		## File name manager utility
-cask 'obs'				## Open Broadcaster screen capture/video-casting software
+cask 'obs'			## Open Broadcaster screen capture/video-casting software
 cask 'phpstorm'			## JetBrains for php
 cask 'poedit'			## i18n translation file editor
 cask 'pycharm'			## JetBrains for python & python3
@@ -72,4 +70,4 @@ cask 'slack'			## Slack team discussion forum
 cask 'spectacle'		## App and window management
 cask 'sublime-text'		## Lightweight text editor
 cask 'viscosity'		## VPN client software
-cask 'vlc'				## Media player without the overhead
+cask 'vlc'			## Media player without the overhead
