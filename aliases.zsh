@@ -7,7 +7,7 @@ alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
 alias code="cd $HOME/Code"
-alias journal="cd $Home/notes"
+alias journal="cd $HOME/Notes"
 ## Brew
 alias bu="brew update && brew upgrade && brew cleanup && brew prune"
 alias bs="brew search"
