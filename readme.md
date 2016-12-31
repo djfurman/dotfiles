@@ -39,7 +39,7 @@ Get to it!
  * Don't back your up to FileValut key to Apple Instead; write it down, put it in a safe - this means you! 
  * Don't *ever* share you crypto keys, with *anyone*, under *any circumstance*; it kinda defeats the purpose :smile:
  * Always keep your firewall operational, yes, it takes an extra second when you want to connect new apps, but data loss, identity theft and security breaches take MUCH longer to fix.
- * You should probably be using a VPN when not on a trusted network, this is just a note, but still. You'll not Viscosity (a Mac OpenVPN client) is installed by this repo's [`Brewfile`](./Brewfile).
+ * You should probably be using a VPN when not on a trusted network, this is just a note, but still. You'll note Viscosity (a Mac OpenVPN client) is installed by this repo's [`Brewfile`](./Brewfile).
  * I strongly recommend using both an ED25519 Elyptic Curve key as well as an RSA key for old stuff that doesn't support EC. 
  * Use passwords for your private keys please! 
  * Make sure to use a long RSA key too and keep an eye on NIST's recommendations for key length. For the next few years, 4096 is sufficient and I've read a few articles that even imply that beyond 3072 bytes you're hitting an asymptote for security/performance.
