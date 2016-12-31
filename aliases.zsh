@@ -24,7 +24,7 @@ alias g='clear && gulp'
 ## Laravel
 alias art="php artisan"
 alias tinker="php artisan tinker"
-alias nlp="composer require --dev barryvdh/laravel-ide-helper && composer require --dev doctrine/dbal && yarn install && copyredis"
+alias nlp="composer require --dev barryvdh/laravel-ide-helper && composer require --dev doctrine/dbal && composer require --dev predis/predis && yarn install"
 ## Composer
 alias ci="composer install"
 alias cu="composer update"
@@ -43,8 +43,8 @@ alias storm='open -a /Applications/PhpStorm.app "`pwd`"'
 alias charm='open -a /Applications/PyCharm.app "`pwd`"'
 alias vm="vagrant ssh"
 ## Git Stuff
-alias mygit="git config user.name '$GIT_USER_NAME' && git config user.email $GIT_PERSONAL_EMAIL && git flow init -d"
-alias workgit="git config user.name '$GIT_USER_NAME' && git config user.email $GIT_WORK_EMAIL && git flow init -d"
+alias mygit="git config user.name \"$GIT_USER_NAME\" && git config user.email $GIT_PERSONAL_EMAIL && git flow init -d"
+alias workgit="git config user.name \"$GIT_USER_NAME\" && git config user.email $GIT_WORK_EMAIL && git flow init -d"
 alias gs='git status'
 alias gl='git log'
 alias gf='git flow'
