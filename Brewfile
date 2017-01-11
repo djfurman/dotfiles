@@ -15,6 +15,7 @@ brew 'coreutils'
 brew 'git' 
 brew 'git-flow'
 brew 'homebrew/dupes/grep'
+brew 'vim'
 
 # Development
 ## Python
@@ -40,9 +41,7 @@ mas 'microsoft-remote-desktop', id: 715768417 ## Remote desktop connection clien
 mas 'onedrive', id: 823766827 ## Local filesystem link to Microsoft OneDrive
 
 # Cask installation
-## I believe this will solve the cask issue with 
-## 1. having multple installed versions and 
-## 2. overwriting on update from in-app usage
+## Solves the cask issue with overwriting on update from in-app usage
 cask_args appdir: '/Applications'
 # Fonts
 cask 'font-fira-code'
