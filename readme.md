@@ -1,8 +1,6 @@
 # Disclaimer
 
-I've tested bits and parts as I can without a complete reinstall, but please don't consider this production ready yet! If you're interesting in helping me test/enhance, please open issues!
-
-**You've been warned!**
+I've tested the majority of the parts as I can without a complete reinstall, but please don't consider this fully production ready yet! If you're interesting in helping me test/enhance, please open issues!
 
 # Daniel's Dotfiles
 
@@ -36,21 +34,21 @@ Get to it!
 
 ## Security Notes
 
- * Don't back your up to FileValut key to Apple Instead; write it down, put it in a safe - this means you! 
+ * Don't back your up to FileValut key to Apple Instead; write it down, put it in a safe - this means you!
  * Don't *ever* share you crypto keys, with *anyone*, under *any circumstance*; it kinda defeats the purpose :smile:
  * Always keep your firewall operational, yes, it takes an extra second when you want to connect new apps, but data loss, identity theft and security breaches take MUCH longer to fix.
  * You should probably be using a VPN when not on a trusted network, this is just a note, but still. You'll note Viscosity (a Mac OpenVPN client) is installed by this repo's [`Brewfile`](./Brewfile).
- * I strongly recommend using both an ED25519 Elyptic Curve key as well as an RSA key for old stuff that doesn't support EC. 
- * Use passwords for your private keys please! 
+ * I strongly recommend using both an ED25519 Elyptic Curve key as well as an RSA key for old stuff that doesn't support EC.
+ * Use passwords for your private keys please!
  * Make sure to use a long RSA key too and keep an eye on NIST's recommendations for key length. For the next few years, 4096 is sufficient and I've read a few articles that even imply that beyond 3072 bytes you're hitting an asymptote for security/performance.
  * Using a best practice from the many dotenv projects, I've included [`.env.example`](./.env.example) as an example of a place to store your config.
 
 ### Doing it with EC
 
-`ssh-keygen -t ed25519 -C "My Name & Computer"` 
+`ssh-keygen -t ed25519 -C "My Name & Computer"`
 
 ### Doing it with RSA @ 4096 bytes
- 
+
 `ssh-keygen -t rsa -b 4096 -C "My Name & Computer"`
 
 ## Finding Your Way
@@ -59,7 +57,7 @@ Go through the [`.macos`](./.macos) file. You can find much more settings [expla
 
 Check out the [`Brewfile`](./Brewfile) file to install for your machine. Use `brew search` or [their website search](https://caskroom.github.io/search) to check if the app you want to install is available. If it's not, consider making a pull request!
 
-Check out the [`aliases.zsh`](./aliases.zsh) file and do your thing. 
+Check out the [`aliases.zsh`](./aliases.zsh) file and do your thing.
 
 If you need to tweak your `$PATH` check out the [`path.zsh`](./path.zsh) file.
 
@@ -79,7 +77,7 @@ mackup backup
 
 Please open issues for any enhancements you may have or issues you find, I'll respond as quickly as possible. Thanks!
 
-# Some Background 
+# Some Background
 
 It's been several years since I've done a fresh install of my Mac. Over time, remnants of past experiments, accumulated old settings, and what not have "left their mark". Time to fix that with a clean install! I'm going to coordinate that with the Sierra OS update too, because; well, why not?
 
