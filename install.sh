@@ -24,7 +24,7 @@ brew tap caskroom/versions
 ## Update package data from the added respositories
 brew update
 ## Install applications and utilities (See Brewfile)
-brew bundle 
+brew bundle
 
 # Setup for development
 ## Make ZSH the default shell environment
@@ -35,7 +35,11 @@ source .env
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ## Php Development Setup
 ### Install global Composer packages
-/usr/local/bin/composer global require laravel/installer laravel/lumen-installer laravel/valet drush/drush drupal/console
+/usr/local/bin/composer global require laravel/installer
+/usr/local/bin/composer global require laravel/lumen-installer
+/usr/local/bin/composer global require laravel/valet
+/usr/local/bin/composer global require drush/drush
+/usr/local/bin/composer global require drupal/console
 ## Install Python virtualenv stuff
 pip install virtualenvwrapper
 mkdir -p $WORKON_HOME
