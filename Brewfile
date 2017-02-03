@@ -38,7 +38,7 @@ brew 'redis'
 mas 'Telegram', id: 747648890 ## Secure text messaging
 mas 'Boxy SVG', id: 611658502 ## Mac native SVG image editor
 mas 'microsoft-remote-desktop', id: 715768417 ## Remote desktop connection client to RDP
-mas 'onedrive', id: 823766827 ## Local filesystem link to Microsoft OneDrive
+# mas 'onedrive', id: 823766827 ## Local filesystem link to Microsoft OneDrive ## Commented out due to pre-release version's capability to integrate with SharePoint groups and libraries
 
 # Cask installation
 ## Solves the cask issue with overwriting on update from in-app usage
