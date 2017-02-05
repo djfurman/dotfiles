@@ -36,10 +36,7 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 ## Php Development Setup
 ### Install global Composer packages
 /usr/local/bin/composer global require laravel/installer
-/usr/local/bin/composer global require laravel/lumen-installer
 /usr/local/bin/composer global require laravel/valet
-/usr/local/bin/composer global require drush/drush
-/usr/local/bin/composer global require drupal/console
 ## Install Python virtualenv stuff
 pip install virtualenvwrapper
 mkdir -p $WORKON_HOME

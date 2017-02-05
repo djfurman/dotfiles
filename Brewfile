@@ -30,6 +30,8 @@ brew 'gnu-cobol'
 brew 'php71'
 brew 'php71-mcrypt'
 brew 'composer'
+brew 'drupalconsole'
+brew 'drush'
 ## Database
 brew 'mariadb'
 brew 'redis' 
