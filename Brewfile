@@ -5,6 +5,7 @@ brew 'zsh'
 brew 'mackup'
 
 # Utilities Install 
+brew 'mas'
 brew 'wget'
 brew 'ncdu'
 brew 'sshrc' 
