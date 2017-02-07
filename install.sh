@@ -3,6 +3,7 @@
 # This script installs and configures a fresh macOS
 echo "Setting up this Mac..."
 
+# Import the enviornment variables set by the user
 source .env
 
 # Homebrew - The missing package manager for macOS
@@ -29,10 +30,12 @@ brew bundle
 # Setup for development
 ## Make ZSH the default shell environment
 chsh -s $(which zsh)
-## Load the enviornment files
+## Load the enviornment files for the new shell enviornment
 source .env
 ## Install Oh-My-ZSH
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+## Reload the enviornment file for the (yet again) new shell
+source .env
 ## Php Development Setup
 ### Install global Composer packages
 /usr/local/bin/composer global require laravel/installer
@@ -52,3 +55,4 @@ mkdir -p $HOME/Code/etl			## Create a directory to hold all of my extract/transf
 # Set macOS preferences
 # We will run this last because this will reload the shell
 source .macos
+
