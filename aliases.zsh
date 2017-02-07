@@ -53,3 +53,5 @@ alias gf='git flow'
 alias gff='git flow feature'
 alias gac='git add . && git commit -m'
 alias nah='git reset --hard && git clean -df'
+## BOTS Stuff
+alias infile="open $VIRTUAL_ENV/lib/python2.7/site-packages/bots/botssys/infile"
