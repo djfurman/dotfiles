@@ -4,26 +4,26 @@ brew 'zsh'
 # Setup device sync via DropBox
 brew 'mackup'
 
-# Utilities Install 
+# Utilities Install
 brew 'mas'
 brew 'wget'
 brew 'ncdu'
-brew 'sshrc' 
+brew 'sshrc'
 
 # Install more recent versions of some macOS tools
 brew 'bash'
 brew 'coreutils'
-brew 'git' 
+brew 'git'
 brew 'git-flow'
 brew 'homebrew/dupes/grep'
 brew 'vim'
 
 # Development
 ## Python
-brew 'python' 
+brew 'python'
 brew 'python3'
-## Node 
-brew 'node', args: ['without-npm']
+## Node
+brew 'node' #, args: ['without-npm'] ## removed to attempt integrated installation
 brew 'yarn'
 ## COBOL
 brew 'gnu-cobol'
@@ -35,7 +35,7 @@ brew 'drupalconsole'
 brew 'drush'
 ## Database
 brew 'mariadb'
-brew 'redis' 
+brew 'redis'
 
 # Install Mac App Store apps
 mas 'Telegram', id: 747648890 ## Secure text messaging

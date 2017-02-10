@@ -1,6 +1,6 @@
 # Disclaimer
 
-I've tested the majority of the parts as I can without a complete reinstall, but please don't consider this fully production ready yet! If you're interesting in helping me test/enhance, please open issues!
+Final installation script issues are down to when resets happen with the shell, seems like those reboots may require multiple scripts. Otherwise, everything works as designed!
 
 # Daniel's Dotfiles
 
@@ -17,10 +17,9 @@ I use several computers regularly and as I update settings, if I don't remember 
 2. Link iCLoud account
 3. Enable FileValut
 4. Enable your Firewall
-5. Install Xcode
-6. Open Xcode & accept the license agreement
+5. Install and open Xcode to accept the license agreement
 7. Install macOS Command Line Tools by running `xcode-select --install`
-8. Generate yourself some OpenSSH keys, add them to your GitHub account
+8. Generate yourself some OpenSSH keys, add them to your GitHub account `ssh-keygen -t ed25519 -C "My Name & Computer"`
 5. Clone this repo to `~/.dotfiles`
 7. Copy the example env file to your active one `cp .env.example .env`
 7. Update your personal stuff into the `.env` file
@@ -37,18 +36,24 @@ Get to it!
  * Don't *ever* share you crypto keys, with *anyone*, under *any circumstance*; it kinda defeats the purpose :smile:
  * Always keep your firewall operational, yes, it takes an extra second when you want to connect new apps, but data loss, identity theft and security breaches take MUCH longer to fix.
  * You should probably be using a VPN when not on a trusted network, this is just a note, but still. You'll note Viscosity (a Mac OpenVPN client) is installed by this repo's [`Brewfile`](./Brewfile).
- * I strongly recommend using both an ED25519 Elyptic Curve key as well as an RSA key for old stuff that doesn't support EC.
- * Use passwords for your private keys please!
- * Make sure to use a long RSA key too and keep an eye on NIST's recommendations for key length. For the next few years, 4096 is sufficient and I've read a few articles that even imply that beyond 3072 bytes you're hitting an asymptote for security/performance.
  * Using a best practice from the many dotenv projects, I've included [`.env.example`](./.env.example) as an example of a place to store your config.
 
-### Doing it with EC
+### SSH Keys
+
+Several types of key ciphers exist with varying degrees of complexity/security offered. I am not a cryptography engineer and do not intend to turn this into a 'ECDSA vice ED25519 vice RSA-4096' discussion, so please do your own research on what level of secruity you need. If you are looking for good resources on the various key types and advantages/disadvantages there are many blogs available, but I believe [this article from arsTechnica](https://arstechnica.com/security/2013/10/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/) is a good place to start.
+
+* I strongly recommend using both an ED25519 Elyptic Curve key as well as an RSA key for old stuff that doesn't support EC.
+* Use passwords for your private keys please!
+
+#### Elliptic Curve
 
 `ssh-keygen -t ed25519 -C "My Name & Computer"`
 
-### Doing it with RSA @ 4096 bytes
+#### RSA @ 4096 bytes
 
 `ssh-keygen -t rsa -b 4096 -C "My Name & Computer"`
+
+**Note** If you're going to (or required to) use an RSA key, keep an eye on NIST's recommendations for key length. For the next few years, 4096 is sufficient and I've read a few articles that even imply that beyond 3072 bytes you're hitting an asymptote for security/performance.
 
 ## Finding Your Way
 
