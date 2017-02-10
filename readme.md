@@ -22,7 +22,6 @@ I use several computers regularly and as I update settings, if I don't remember 
 7. Install macOS Command Line Tools by running `xcode-select --install`
 8. Generate yourself some OpenSSH keys, add them to your GitHub account
 5. Clone this repo to `~/.dotfiles`
-6. Append `/usr/local/bin/zsh` to the end of your `/etc/shells` file
 7. Copy the example env file to your active one `cp .env.example .env`
 7. Update your personal stuff into the `.env` file
 7. Run `install.sh` to start the installation
