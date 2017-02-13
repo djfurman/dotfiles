@@ -3,7 +3,7 @@
 #################
 alias copyrsa="pbcopy < $HOME/.ssh/id_rsa.pub"
 alias copyec="pbcopy < $HOME/.ssh/id_ed25519.pub"
-alias copyredis="echo $REDIS_TOKEN | pbcopy"
+alias copyredis="echo -n $REDIS_TOKEN | pbcopy"
 alias reloadcli="source $HOME/.zshrc"
 alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 ## Directories
