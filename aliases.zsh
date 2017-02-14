@@ -12,7 +12,7 @@ alias library="cd $HOME/Library"
 alias etl="cd $HOME/Code/etl"
 alias web="cd $HOME/Code/web"
 alias utils="cd $HOME/Code/utils"
-alias journal="cd $HOME/Notes"
+alias journal="cd $HOME/Documents/Notes"
 ## Brew
 alias bu="brew update && brew upgrade && brew cleanup && brew prune"
 alias bs="brew search"
