@@ -16,7 +16,7 @@ alias journal="cd $HOME/Notes"
 ## Brew
 alias bu="brew update && brew upgrade && brew cleanup && brew prune"
 alias bs="brew search"
-alias ngu="npm install npm cross-env vue-cli cordova laravel-echo-server -g"
+alias ngu="npm install cross-env vue-cli cordova laravel-echo-server -g"
 
 ###############
 # Development #
