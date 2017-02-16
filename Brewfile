@@ -4,25 +4,26 @@ brew 'zsh'
 # Setup device sync via DropBox
 brew 'mackup'
 
-# Utilities Install 
+# Utilities Install
+brew 'mas'
 brew 'wget'
 brew 'ncdu'
-brew 'sshrc' 
+brew 'sshrc'
 
 # Install more recent versions of some macOS tools
 brew 'bash'
 brew 'coreutils'
-brew 'git' 
+brew 'git'
 brew 'git-flow'
 brew 'homebrew/dupes/grep'
 brew 'vim'
 
 # Development
 ## Python
-brew 'python' 
+brew 'python'
 brew 'python3'
-## Node 
-brew 'node', args: ['without-npm']
+## Node
+brew 'node' #, args: ['without-npm'] ## removed to attempt integrated installation
 brew 'yarn'
 ## COBOL
 brew 'gnu-cobol'
@@ -30,15 +31,17 @@ brew 'gnu-cobol'
 brew 'php71'
 brew 'php71-mcrypt'
 brew 'composer'
+brew 'drupalconsole'
+brew 'drush'
 ## Database
 brew 'mariadb'
-brew 'redis' 
+brew 'redis'
 
 # Install Mac App Store apps
 mas 'Telegram', id: 747648890 ## Secure text messaging
 mas 'Boxy SVG', id: 611658502 ## Mac native SVG image editor
 mas 'microsoft-remote-desktop', id: 715768417 ## Remote desktop connection client to RDP
-mas 'onedrive', id: 823766827 ## Local filesystem link to Microsoft OneDrive
+# mas 'onedrive', id: 823766827 ## Local filesystem link to Microsoft OneDrive ## Commented out due to pre-release version's capability to integrate with SharePoint groups and libraries
 
 # Cask installation
 ## Solves the cask issue with overwriting on update from in-app usage

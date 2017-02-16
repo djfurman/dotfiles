@@ -110,10 +110,15 @@ defaults write com.apple.menuextra.clock DateFormat "EEE MMM d  H:mm"
 ## Prevent Photos from opening automatically when devices are plugged in
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
+# OneDrive #
+## Make OneDrive work with entire sharepoint sites
+Defaults write com.microsoft.OneDrive TeamSiteSyncPreview -bool True
+Defaults write com.microsoft.OneDriveUpdate Tier Team
+
 # Kill affected applications
 for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
     "Dock" "Finder" "Mail" "Messages" "Photos" "Safari" "SystemUIServer" \
-    "Terminal" "Tweetbot" "iCal"; do
+    "Terminal" "Tweetbot" "iCal" "cfprefsd"; do
     killall "${app}" &> /dev/null
 done
 

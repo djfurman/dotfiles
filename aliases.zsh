@@ -3,18 +3,20 @@
 #################
 alias copyrsa="pbcopy < $HOME/.ssh/id_rsa.pub"
 alias copyec="pbcopy < $HOME/.ssh/id_ed25519.pub"
-alias copyredis="echo $REDIS_TOKEN | pbcopy"
+alias copyredis="echo -n $REDIS_TOKEN | pbcopy"
 alias reloadcli="source $HOME/.zshrc"
 alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 ## Directories
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
-alias code="cd $HOME/Code"
+alias etl="cd $HOME/Code/etl"
+alias web="cd $HOME/Code/web"
+alias utils="cd $HOME/Code/utils"
 alias journal="cd $HOME/Notes"
 ## Brew
 alias bu="brew update && brew upgrade && brew cleanup && brew prune"
 alias bs="brew search"
-alias ngu="npm install npm cross-env vue-cli cordova laravel-echo-server -g"
+alias ngu="npm install cross-env vue-cli cordova laravel-echo-server -g"
 
 ###############
 # Development #
@@ -51,3 +53,5 @@ alias gf='git flow'
 alias gff='git flow feature'
 alias gac='git add . && git commit -m'
 alias nah='git reset --hard && git clean -df'
+## BOTS Stuff
+alias infile="open $VIRTUAL_ENV/lib/python2.7/site-packages/bots/botssys/infile"
