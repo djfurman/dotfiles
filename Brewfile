@@ -53,6 +53,7 @@ cask 'alfred'			## Spotlight on Steroids
 cask 'amazon-drive'		## Use S3 like DropBox
 cask 'appcleaner'		## Get rid of stuff well
 cask 'caffeine'			## Keep the mac awake...
+cask 'colorpicker-skalacolor'	## Color picker for web design purposes
 cask 'cyberduck'		## GUI remote file browser
 cask 'dropbox'			## Used to sync settings across devices
 cask 'gitter'			## Team communication lobby for GitHub projects
