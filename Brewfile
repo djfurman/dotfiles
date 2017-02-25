@@ -62,6 +62,7 @@ cask 'iterm2'			## Terminal replacement
 cask 'keepassx'			## Password manager
 cask 'keka'			## Open source "open anything" archive extractor tool
 cask 'libreoffice'		## Open source office replacement, much better at dealing with file formats than MS
+cask 'medis'			## GUI management for Redis
 cask 'namechanger'		## File name manager utility
 cask 'obs'			## Open Broadcaster screen capture/video-casting software
 cask 'phpstorm'			## JetBrains for php
