@@ -70,6 +70,7 @@ cask 'phpstorm'			## JetBrains for php
 cask 'poedit'			## i18n translation file editor
 cask 'pycharm'			## JetBrains for python & python3
 cask 'sequel-pro'		## GUI for MySQL database fun
+casl 'skype'			## Skype for normal people
 cask 'slack'			## Slack team discussion forum
 cask 'spectacle'		## App and window management
 cask 'sublime-text'		## Lightweight text editor
