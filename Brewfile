@@ -42,6 +42,7 @@ mas 'Telegram', id: 747648890 ## Secure text messaging
 mas 'Boxy SVG', id: 611658502 ## Mac native SVG image editor
 mas 'microsoft-remote-desktop', id: 715768417 ## Remote desktop connection client to RDP
 # mas 'onedrive', id: 823766827 ## Local filesystem link to Microsoft OneDrive ## Commented out due to pre-release version's capability to integrate with SharePoint groups and libraries
+mas 'twitter', id: 409789998
 
 # Cask installation
 ## Solves the cask issue with overwriting on update from in-app usage
@@ -70,6 +71,7 @@ cask 'phpstorm'			## JetBrains for php
 cask 'poedit'			## i18n translation file editor
 cask 'pycharm'			## JetBrains for python & python3
 cask 'sequel-pro'		## GUI for MySQL database fun
+cask 'skype'			## Skype for normal people
 cask 'slack'			## Slack team discussion forum
 cask 'spectacle'		## App and window management
 cask 'sublime-text'		## Lightweight text editor
