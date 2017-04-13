@@ -36,6 +36,8 @@ brew 'drush'
 ## Database
 brew 'mariadb'
 brew 'redis'
+## Orchestration
+brew 'ansible'
 
 # Install Mac App Store apps
 mas 'Telegram', id: 747648890 ## Secure text messaging
