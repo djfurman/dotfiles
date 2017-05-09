@@ -23,16 +23,18 @@ brew 'vim'
 brew 'python'
 brew 'python3'
 ## Node
-brew 'node' #, args: ['without-npm'] ## removed to attempt integrated installation
+brew 'node'
 brew 'yarn'
-## COBOL
-brew 'gnu-cobol'
+brew 'webpack'
 ## PHP
 brew 'php71'
 brew 'php71-mcrypt'
 brew 'composer'
 brew 'drupalconsole'
 brew 'drush'
+## Java
+brew 'maven'
+brew 'springboot'
 ## Database
 brew 'mariadb'
 brew 'redis'
@@ -43,7 +45,7 @@ brew 'ansible'
 mas 'Telegram', id: 747648890 ## Secure text messaging
 mas 'Boxy SVG', id: 611658502 ## Mac native SVG image editor
 mas 'microsoft-remote-desktop', id: 715768417 ## Remote desktop connection client to RDP
-# mas 'onedrive', id: 823766827 ## Local filesystem link to Microsoft OneDrive ## Commented out due to pre-release version's capability to integrate with SharePoint groups and libraries
+mas 'onedrive', id: 823766827 ## Local filesystem link to Microsoft OneDrive
 mas 'twitter', id: 409789998
 
 # Cask installation
@@ -62,6 +64,7 @@ cask 'dropbox'			## Used to sync settings across devices
 cask 'gitter'			## Team communication lobby for GitHub projects
 cask 'google-chrome'		## Browser V8 goodness
 cask 'insomnia'			## RESTful API Testing
+cask 'intellij-idea'    ## JetBrains for Java
 cask 'iterm2'			## Terminal replacement
 cask 'keepassx'			## Password manager
 cask 'keka'			## Open source "open anything" archive extractor tool
@@ -79,3 +82,4 @@ cask 'spectacle'		## App and window management
 cask 'sublime-text'		## Lightweight text editor
 cask 'viscosity'		## VPN client software
 cask 'vlc'			## Media player without the overhead
+cask 'whatsapp'         ## More encrypted communications
