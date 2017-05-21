@@ -55,3 +55,4 @@ source .env
 # We will run this last because this will reload the shell
 source .macos
 
+echo "Installation is complete. Enjoy!"
