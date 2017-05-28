@@ -15,7 +15,7 @@ brew 'bash'
 brew 'coreutils'
 brew 'git'
 brew 'git-flow'
-brew 'homebrew/dupes/grep'
+brew 'grep'
 brew 'vim'
 
 # Development
@@ -33,6 +33,8 @@ brew 'composer'
 brew 'drupalconsole'
 brew 'drush'
 ## Java
+cask_args appdir: '/Applications'
+cask 'java'
 brew 'maven'
 brew 'springboot'
 ## Database
@@ -44,8 +46,6 @@ brew 'ansible'
 # Install Mac App Store apps
 mas 'Telegram', id: 747648890 ## Secure text messaging
 mas 'Boxy SVG', id: 611658502 ## Mac native SVG image editor
-# mas 'microsoft-remote-desktop', id: 715768417 ## Remote desktop connection client to RDP
-mas 'onedrive', id: 823766827 ## Local filesystem link to Microsoft OneDrive
 mas 'twitter', id: 409789998
 
 # Cask installation

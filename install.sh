@@ -18,8 +18,8 @@ brew tap homebrew/bundle
 brew tap caskroom/cask
 brew tap caskroom/fonts
 brew tap homebrew/core
-brew tap homebrew/dupes
 brew tap homebrew/php
+brew tap pivotal/tap
 brew tap homebrew/services
 brew tap caskroom/versions
 ## Update package data from the added respositories
@@ -50,9 +50,5 @@ chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ## Reload the enviornment file for the (yet again) new shell
 source .env
-
-# Set macOS preferences
-# We will run this last because this will reload the shell
-source .macos
 
 echo "Installation is complete. Enjoy!"
