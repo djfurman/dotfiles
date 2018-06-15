@@ -6,9 +6,7 @@ brew 'mackup'
 
 # Utilities Install
 brew 'mas'
-brew 'wget'
 brew 'ncdu'
-brew 'sshrc'
 
 # Install more recent versions of some macOS tools
 brew 'bash'
@@ -21,24 +19,14 @@ brew 'vim'
 # Development
 ## Python
 brew 'python'
-brew 'python3'
+brew 'python@2'
 ## Node
 brew 'node'
-brew 'yarn'
 brew 'webpack'
 ## PHP
-brew 'php71'
-brew 'php71-mcrypt'
+brew 'php'
 brew 'composer'
-brew 'drupalconsole'
-brew 'drush'
-## Java
-cask_args appdir: '/Applications'
-cask 'java'
-brew 'maven'
-brew 'springboot'
 ## Database
-brew 'mariadb'
 brew 'redis'
 ## Orchestration
 brew 'ansible'
@@ -46,7 +34,6 @@ brew 'ansible'
 # Install Mac App Store apps
 mas 'Telegram', id: 747648890 ## Secure text messaging
 mas 'Boxy SVG', id: 611658502 ## Mac native SVG image editor
-mas 'twitter', id: 409789998
 
 # Cask installation
 ## Solves the cask issue with overwriting on update from in-app usage
@@ -54,32 +41,23 @@ cask_args appdir: '/Applications'
 # Fonts
 cask 'font-fira-code'
 # Apps
-cask 'alfred'			## Spotlight on Steroids
-cask 'amazon-drive'		## Use S3 like DropBox
-cask 'appcleaner'		## Get rid of stuff well
-cask 'caffeine'			## Keep the mac awake...
-cask 'colorpicker-skalacolor'	## Color picker for web design purposes
-cask 'cyberduck'		## GUI remote file browser
-cask 'dropbox'			## Used to sync settings across devices
-cask 'gitter'			## Team communication lobby for GitHub projects
+cask 'amazon-drive'		    ## Use S3 like DropBox
+cask 'appcleaner'		    ## Get rid of stuff well
+cask 'caffeine'			    ## Keep the mac awake...
+cask 'dropbox'			    ## Used to sync settings across devices
+cask 'gitter'			    ## Team communication lobby for GitHub projects
 cask 'google-chrome'		## Browser V8 goodness
-cask 'insomnia'			## RESTful API Testing
-cask 'intellij-idea'    ## JetBrains for Java
-cask 'iterm2'			## Terminal replacement
-cask 'keepassx'			## Password manager
-cask 'keka'			## Open source "open anything" archive extractor tool
-cask 'libreoffice'		## Open source office replacement, much better at dealing with file formats than MS
-cask 'medis'			## GUI management for Redis
-cask 'namechanger'		## File name manager utility
-cask 'obs'			## Open Broadcaster screen capture/video-casting software
-cask 'phpstorm'			## JetBrains for php
-cask 'poedit'			## i18n translation file editor
-cask 'pycharm'			## JetBrains for python & python3
-cask 'sequel-pro'		## GUI for MySQL database fun
-cask 'skype'			## Skype for normal people
-cask 'slack'			## Slack team discussion forum
-cask 'spectacle'		## App and window management
-cask 'sublime-text'		## Lightweight text editor
-cask 'viscosity'		## VPN client software
-cask 'vlc'			## Media player without the overhead
-cask 'whatsapp'         ## More encrypted communications
+cask 'insomnia'			    ## RESTful API Testing
+cask 'iterm2'			    ## Terminal replacement
+cask 'keepassx'			    ## Password manager
+cask 'keka'			        ## Open source "open anything" archive extractor tool
+cask 'medis'			    ## GUI management for Redis
+cask 'namechanger'		    ## File name manager utility
+cask 'sequel-pro'		    ## GUI for MySQL database fun
+cask 'skype'			    ## Skype for normal people
+cask 'slack'			    ## Slack team discussion forum
+cask 'spectacle'		    ## App and window management
+cask 'sublime-text'		    ## Lightweight text editor
+cask 'viscosity'		    ## VPN client software
+cask 'visual-studio-code'   ## VS Code Editor'
+cask 'vlc'			        ## Media player without the overhead
