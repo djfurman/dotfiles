@@ -20,4 +20,4 @@ export PATH="node_modules/.bin:vendor/bin:$PATH"
 # export PATH="$DOTFILES/bin:$PATH"
 
 # Local bin directories before anything else
-export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="/usr/local/opt/python/libexec/bin:/usr/local/bin:/usr/local/sbin:$PATH"
