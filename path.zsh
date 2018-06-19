@@ -4,6 +4,9 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
 # Load Node global installed binaries
 export PATH="$HOME/.npm-packages/bin:$PATH"
 
+# Load Python3 global installed binaries
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
 # Load composer globally installed binaries
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 

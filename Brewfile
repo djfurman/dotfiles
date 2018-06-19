@@ -33,7 +33,6 @@ brew 'ansible'
 
 # Install Mac App Store apps
 mas 'Telegram', id: 747648890 ## Secure text messaging
-mas 'Boxy SVG', id: 611658502 ## Mac native SVG image editor
 
 # Cask installation
 ## Solves the cask issue with overwriting on update from in-app usage
