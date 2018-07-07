@@ -39,10 +39,10 @@ Get to it!
 
 ### SSH Keys
 
-Several types of key ciphers exist with varying degrees of complexity/security offered. I am not a cryptography engineer and do not intend to turn this into an 'ECDSA vice ED25519 vice RSA-4096' discussion, so please do your own research on what level of security you need. If you are looking for good resources on the various key types and advantages/disadvantages there are many blogs available, but I believe [this article from arsTechnica](https://arstechnica.com/security/2013/10/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/) is a good place to start.
+Several types of key ciphers exist that have various degrees of complexity/security. I am not a cryptography engineer and do not intend to turn this into an 'ECDSA vice ED25519 vice RSA-4096' discussion, so please do your own research on the level of security you need. If you are looking for good resources on various key types and their advantages/disadvantages, there are many blogs available. I believe [this article from arsTechnica](https://arstechnica.com/security/2013/10/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/) is a good place to start.
 
-* I strongly recommend using both an ED25519 Elliptic Curve key as well as an RSA key for old stuff that doesn't support EC.
-* Use passwords for your private keys please!
+* I strongly recommend using both an ED25519 Elliptic Curve key and an RSA key for old stuff that doesn't support EC.
+* Protect your private keys with passwords.
 
 #### Elliptic Curve
 
@@ -52,25 +52,25 @@ Several types of key ciphers exist with varying degrees of complexity/security o
 
 `ssh-keygen -t rsa -b 4096 -C "My Name & Computer"`
 
-**Note** If you're going to (or required to) use an RSA key, keep an eye on NIST's recommendations for key length. For the next few years, 4096 is sufficient and I've read a few articles that even imply that beyond 3072 bytes you're hitting an asymptote for security/performance.
+**Note** If you're going to use an RSA key, keep an eye on NIST's recommendations for key length. For the next few years, 4096 is sufficient. According to the articles that I have read, beyond 3072 bytes, you will be hitting an asymptote for security/performance.
 
 ## Finding Your Way
 
-Go through the [`.macos`](./.macos) file. You can find much more settings [explained by Dries](https://github.com/driesvints/dotfiles) and his reference points.
+Go through the [`.macos`](./.macos) file. You can find more information on settings [explained by Dries](https://github.com/driesvints/dotfiles).
 
-Check out the [`Brewfile`](./Brewfile) file to install for your machine. Use `brew search` or [their website search](https://caskroom.github.io/search) to check if the app you want to install is available. If it's not, consider making a pull request!
+Check out the [`Brewfile`](./Brewfile) file to install it on your machine. Use `brew search` or [their website search](https://caskroom.github.io/search) to check if the app you want to install is available. If it's not, make a pull request.
 
-Check out the [`aliases.zsh`](./aliases.zsh) file and do your thing.
+Check out the [`aliases.zsh`](./aliases.zsh) file and make your changes.
 
-If you need to tweak your `$PATH` check out the [`path.zsh`](./path.zsh) file.
+If you need to tweak your `$PATH`, check out the [`path.zsh`](./path.zsh) file.
 
 ### Important note (credit to Dries)
 
->One thing you'll need to do manually is adding your `~/.zshrc` file. You can't symlink the `.zshrc` file from your dotfiles because Mackup will already symlink your `.zshrc` from your home directory. That's why we'll need to create the file manually. Add the contents below to a `.zshrc` file in your user directory. What it will do is load the `.zshrc` file from your dotfiles. Make sure that the path to your dotfiles is correct.
+>You can't symlink the `.zshrc` file from your dotfiles because Mackup will symlink your `.zshrc` from your home directory.  You'll need to manually create your own `~/.zshrc` file. Add the contents below to a `.zshrc` file in your user directory. (This will load the `.zshrc` file from your dotfiles). Make sure that the path to your dotfiles is correct.
 
 ## Mackup
 
-When installing these dotfiles for the first, go ahead and backup with Mackup. Your settings will be synced to your Dropbox so you can use them to sync between computers and reinstall them when reinstalling your Mac. If you want to learn more, [check out the documentation](https://github.com/lra/mackup#supported-storages).
+When installing these dotfiles for the first time, back them up with Mackup. Mackup uses Dropbox to keep your dotfiles and computer settings in sync. You can reinstall the settings when reinstalling your Mac. To learn more, [check out the documentation](https://github.com/lra/mackup#supported-storages).
 
 ```zsh
 mackup backup
@@ -78,13 +78,13 @@ mackup backup
 
 # Contributing
 
-Please open issues for any enhancements you may have or issues you find, I'll respond as quickly as possible. Thanks!
+Please open issues for any enhancements you may have or issues you find. I'll respond as quickly as possible. Thanks!
 
 # Some Background
 
-It's been several years since I've done a fresh install of my Mac. Over time, remnants of past experiments, accumulated old settings, and what not have "left their mark". Time to fix that with a clean install! I'm going to coordinate that with the Sierra OS update too, because; well, why not?
+It's been several years since I've done a fresh install on my Mac. Over time, remnants of past experiments have accumulated old settings and what not have "left their mark". Time to fix that with a clean install! I'm going to coordinate that with the Sierra OS update too, because why not?
 
 # Credits
 
-After a lot of research and reading Dries' Dotfiles repo severed largely as my template for getting to this point.
-[Read his blog post here](https://driesvints.com/blog/getting-started-with-dotfiles). Another key resource for me was he [Github does dotfiles](https://dotfiles.github.io/) project. Please check them both out and don't hesitate to contribute!
+After a lot of research and reading, Dries' Dotfiles repository severed largely as my template for getting to this point.
+[Read his blog post here](https://driesvints.com/blog/getting-started-with-dotfiles). Another key resource for me was the [Github does dotfiles](https://dotfiles.github.io/) project. Please check them both out and don't hesitate to contribute!
