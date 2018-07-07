@@ -1,5 +1,3 @@
-
-
 # Daniel's Dotfiles
 
 I use several computers regularly. As I update settings, if I don't remember to update each of them, I tend to drive myself a little nuts using aliases that aren't consistent. I finally decided it was time to address this as an issue - enter the dotfiles communities! I wanted to make this available to the community as well.
@@ -76,15 +74,15 @@ When installing these dotfiles for the first time, back them up with Mackup. Mac
 mackup backup
 ```
 
-# Contributing
+## Contributing
 
 Please open issues for any enhancements you may have or issues you find. I'll respond as quickly as possible. Thanks!
 
-# Some Background
+## Some Background
 
 It's been several years since I've done a fresh install on my Mac. Over time, remnants of past experiments have accumulated old settings and what not have "left their mark". Time to fix that with a clean install! I'm going to coordinate that with the Sierra OS update too, because why not?
 
-# Credits
+## Credits
 
 After a lot of research and reading, Dries' Dotfiles repository severed largely as my template for getting to this point.
 [Read his blog post here](https://driesvints.com/blog/getting-started-with-dotfiles). Another key resource for me was the [Github does dotfiles](https://dotfiles.github.io/) project. Please check them both out and don't hesitate to contribute!
