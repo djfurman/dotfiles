@@ -1,6 +1,6 @@
 # Disclaimer
 
-Final installation script issues are down to when resets happen with the shell, seems like those reboots may require multiple scripts. Otherwise, everything works as designed!
+Final installation script issues are down to when resets happen with the shell. It seems like those reboots may require multiple scripts. Otherwise, everything works as designed!
 
 # Daniel's Dotfiles
 
@@ -14,8 +14,8 @@ I use several computers regularly and as I update settings, if I don't remember 
 ## Clean Install
 
 1. Update OS from the App Store
-2. Link iCLoud account
-3. Enable FileValut
+2. Link iCloud account
+3. Enable FileVault
 4. Enable your Firewall
 5. Install and open Xcode to accept the license agreement
 7. Install macOS Command Line Tools by running `xcode-select --install`
@@ -32,7 +32,7 @@ Get to it!
 
 ## Security Notes
 
- * Don't back your up to FileValut key to Apple Instead; write it down, put it in a safe - this means you!
+ * Don't back your up to FileVault key to Apple Instead; write it down, put it in a safe - this means you!
  * Don't *ever* share you crypto keys, with *anyone*, under *any circumstance*; it kinda defeats the purpose :smile:
  * Always keep your firewall operational, yes, it takes an extra second when you want to connect new apps, but data loss, identity theft and security breaches take MUCH longer to fix.
  * You should probably be using a VPN when not on a trusted network, this is just a note, but still. You'll note Viscosity (a Mac OpenVPN client) is installed by this repo's [`Brewfile`](./Brewfile).
@@ -40,9 +40,9 @@ Get to it!
 
 ### SSH Keys
 
-Several types of key ciphers exist with varying degrees of complexity/security offered. I am not a cryptography engineer and do not intend to turn this into a 'ECDSA vice ED25519 vice RSA-4096' discussion, so please do your own research on what level of secruity you need. If you are looking for good resources on the various key types and advantages/disadvantages there are many blogs available, but I believe [this article from arsTechnica](https://arstechnica.com/security/2013/10/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/) is a good place to start.
+Several types of key ciphers exist with varying degrees of complexity/security offered. I am not a cryptography engineer and do not intend to turn this into an 'ECDSA vice ED25519 vice RSA-4096' discussion, so please do your own research on what level of security you need. If you are looking for good resources on the various key types and advantages/disadvantages there are many blogs available, but I believe [this article from arsTechnica](https://arstechnica.com/security/2013/10/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/) is a good place to start.
 
-* I strongly recommend using both an ED25519 Elyptic Curve key as well as an RSA key for old stuff that doesn't support EC.
+* I strongly recommend using both an ED25519 Elliptic Curve key as well as an RSA key for old stuff that doesn't support EC.
 * Use passwords for your private keys please!
 
 #### Elliptic Curve
@@ -67,11 +67,11 @@ If you need to tweak your `$PATH` check out the [`path.zsh`](./path.zsh) file.
 
 ### Important note (credit to Dries)
 
->One thing you'll need to do manually is add your `~/.zshrc` file. You can't symlink the `.zshrc` file from your dotfiles because Mackup will already symlink your `.zshrc` from your home directory. That's why we'll need to create the file manually. Add the contents below to a `.zshrc` file in your user directory. What it will do is load the `.zshrc` file from your dotfiles. Make sure that the path to your dotfiles is correct.
+>One thing you'll need to do manually is adding your `~/.zshrc` file. You can't symlink the `.zshrc` file from your dotfiles because Mackup will already symlink your `.zshrc` from your home directory. That's why we'll need to create the file manually. Add the contents below to a `.zshrc` file in your user directory. What it will do is load the `.zshrc` file from your dotfiles. Make sure that the path to your dotfiles is correct.
 
 ## Mackup
 
-When installing these dotfiles for the first, go ahead and backup with Mackup. Your settings will be synced to your Dropbox so you can use them to sync between computers and reinstall them when reinstalling your Mac. If you want to learn more, [checkout the documentation](https://github.com/lra/mackup#supported-storages).
+When installing these dotfiles for the first, go ahead and backup with Mackup. Your settings will be synced to your Dropbox so you can use them to sync between computers and reinstall them when reinstalling your Mac. If you want to learn more, [check out the documentation](https://github.com/lra/mackup#supported-storages).
 
 ```zsh
 mackup backup
