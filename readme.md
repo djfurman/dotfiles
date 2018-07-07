@@ -1,15 +1,14 @@
-# Disclaimer
 
-Final installation script issues are down to when resets happen with the shell. It seems like those reboots may require multiple scripts. Otherwise, everything works as designed!
 
 # Daniel's Dotfiles
 
-I use several computers regularly and as I update settings, if I don't remember to do each of them I tend to drive myself a little nuts using aliases that aren't consistent. I finally decided it was time to address it as an issue - enter the dotfiles communities! I wanted to make this available to the community as well.
+I use several computers regularly. As I update settings, if I don't remember to update each of them, I tend to drive myself a little nuts using aliases that aren't consistent. I finally decided it was time to address this as an issue - enter the dotfiles communities! I wanted to make this available to the community as well.
 
-## Goal
-
+#### Goals:
 * Provide a full environment setup to compile and sync my system stuff and settings
 * Experiment with Mackup
+
+**Disclaimer**: Final installation script issues are down to when resets happen with the shell. It seems like those reboots may require multiple scripts. Otherwise, everything works as designed!
 
 ## Clean Install
 
@@ -19,10 +18,10 @@ I use several computers regularly and as I update settings, if I don't remember 
 4. Enable your Firewall
 5. Install and open Xcode to accept the license agreement
 7. Install macOS Command Line Tools by running `xcode-select --install`
-8. Generate yourself some OpenSSH keys, add them to your GitHub account `ssh-keygen -t ed25519 -C "My Name & Computer"`
-5. Clone this repo to `~/.dotfiles`
+8. Generate OpenSSH keys and add them to your GitHub account `ssh-keygen -t ed25519 -C "My Name & Computer"`
+5. Clone this repository to `~/.dotfiles`
 7. Copy the example env file to your active one `cp .env.example .env`
-7. Update your personal stuff into the `.env` file
+7. Copy your environment variables into the `.env` file
 7. Run `install.sh` to start the installation
 8. Make sure Dropbox is running/configured
 9. Restore preferences by running `mackup restore`
@@ -32,11 +31,11 @@ Get to it!
 
 ## Security Notes
 
- * Don't back your up to FileVault key to Apple Instead; write it down, put it in a safe - this means you!
- * Don't *ever* share you crypto keys, with *anyone*, under *any circumstance*; it kinda defeats the purpose :smile:
- * Always keep your firewall operational, yes, it takes an extra second when you want to connect new apps, but data loss, identity theft and security breaches take MUCH longer to fix.
- * You should probably be using a VPN when not on a trusted network, this is just a note, but still. You'll note Viscosity (a Mac OpenVPN client) is installed by this repo's [`Brewfile`](./Brewfile).
- * Using a best practice from the many dotenv projects, I've included [`.env.example`](./.env.example) as an example of a place to store your config.
+ * Don't backup your FileVault key. Instead, write it down and put it in a safe.
+ * Don't *ever* share you crypto keys with *anyone* under *any circumstance*. It defeats the purpose :smile:
+ * Always keep your firewall operational. Although it takes an extra second when you want to connect new apps, data loss, identity theft and security breaches take MUCH longer to fix.
+ * It is recommended to use a VPN when not on a trusted network. You'll note Viscosity (a Mac OpenVPN client) is installed by this repo's [`Brewfile`](./Brewfile).
+ * Using a best practice from the many dotenv projects, I've included [`.env.example`](./.env.example) as an example of a place to store your configurations.
 
 ### SSH Keys
 
