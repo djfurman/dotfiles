@@ -1,5 +1,5 @@
 [user]
-	name = Daniel Furman
+	name = Phineas Vang
 [core]
 	autocrlf = input
 	excludesfile = $HOME/.dotfiles/gitignore_global

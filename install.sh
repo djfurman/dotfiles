@@ -18,7 +18,7 @@ brew tap homebrew/bundle
 brew tap caskroom/cask
 brew tap caskroom/fonts
 brew tap homebrew/core
-brew tap homebrew/php
+#brew tap homebrew/php
 brew tap pivotal/tap
 brew tap homebrew/services
 brew tap caskroom/versions

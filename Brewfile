@@ -24,7 +24,7 @@ brew 'python@2'
 brew 'node'
 brew 'webpack'
 ## PHP
-brew 'php'
+#brew 'php'
 brew 'composer'
 ## Database
 brew 'redis'
@@ -40,7 +40,7 @@ cask_args appdir: '/Applications'
 # Fonts
 cask 'font-fira-code'
 # Apps
-cask 'amazon-drive'		    ## Use S3 like DropBox
+#cask 'amazon-drive'		    ## Use S3 like DropBox
 cask 'appcleaner'		    ## Get rid of stuff well
 cask 'caffeine'			    ## Keep the mac awake...
 cask 'dropbox'			    ## Used to sync settings across devices
@@ -50,7 +50,7 @@ cask 'insomnia'			    ## RESTful API Testing
 cask 'iterm2'			    ## Terminal replacement
 cask 'keepassx'			    ## Password manager
 cask 'keka'			        ## Open source "open anything" archive extractor tool
-cask 'medis'			    ## GUI management for Redis
+#cask 'medis'			    ## GUI management for Redis
 cask 'namechanger'		    ## File name manager utility
 cask 'sequel-pro'		    ## GUI for MySQL database fun
 cask 'skype'			    ## Skype for normal people
